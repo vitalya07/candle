@@ -808,6 +808,10 @@ a {
   background-color: #4c0505;
 }
 
+.product {
+  padding: 120px 0;
+}
+
 .footer {
   background-color: #1A1A1A;
 }
