@@ -1,0 +1,33 @@
+@mixin fontsSpace700 {
+    font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+@mixin fontsSpace500 {
+    font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+@mixin fontsSpace400 {
+    font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+@mixin fontsSpace300 {
+    font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+@mixin fontsRoboto700 {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+}
+@mixin fontsRoboto500 {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+}
+@mixin fontsRoboto400 {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+}
+@mixin fontsRoboto300 {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+}
