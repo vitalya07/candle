@@ -1,0 +1,49 @@
+.feedback {
+    background-color: $beigeColor;
+    padding: 96px 0;
+    &__title {
+        @include fontsSpace400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: $blackColor2;
+        margin: 0 auto;
+        margin-bottom: 65px;
+        width: 100%;
+        max-width: 190px;        
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+    }
+    &__item {
+        background-color: $whiteColor;
+        padding: 32px;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 390px;
+        min-height: 172px;
+        &-text {
+            @include fontsRoboto400;
+            font-style: Italic;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0px;
+            color: $grayColor2;
+            margin-bottom: 15px;
+            width: 100%;
+            max-width: 325px
+        }
+        &-name {
+            @include fontsRoboto400;
+            font-style: Regular;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0px;
+            color: $grayColor;
+        }
+    }
+}

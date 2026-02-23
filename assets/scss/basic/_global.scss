@@ -11,3 +11,45 @@
 .red {
     color: $redColor !important;
 }
+.btn {
+    width: 100%;
+    max-width: 268px;
+    height: 56px;
+    border-radius: 268px;
+    background-color: $redColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    @include fontsRoboto400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: $whiteColor;
+    cursor: pointer;
+    transition: all .4s ease;
+    &:hover {
+        background-color: $redColor2;
+    }
+}
+.white__btn {
+    width: 220px;
+    height: 56px;
+    opacity: 1;
+    border-radius: 300px;
+    background-color: $whiteColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    cursor: pointer;
+    transition: all .4s ease;
+    @include fontsRoboto400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: $blackColor;
+    &:hover {
+        box-shadow: 0px 0px 20px $blackColor;
+    }
+}

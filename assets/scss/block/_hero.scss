@@ -6,7 +6,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    z-index: -1;
+    z-index: 1;
     padding-top: 218px;
     &::before {
         content: '';
@@ -34,5 +34,17 @@
         font-size: 16px;
         line-height: 24px;  
         color: $blackColor;
+        margin-bottom: 31px;
+    }
+    &__btn {
+        & > img {
+            transition: all .4s ease;
+        }
+        &:hover {
+            & > img {
+                transform: rotate(20deg);
+            }
+        }
+       
     }
 }

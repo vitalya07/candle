@@ -1,0 +1,62 @@
+.intro {
+    &__head {
+        width: 100%;
+        padding: 95px 0;
+        background-color: $beigeColor;
+    }
+    &__title {
+        @include fontsSpace700;
+        font-size: 48px;
+        line-height: 57.6px;
+        letter-spacing: -0.48px;
+        text-align: center;
+        color: $blackColor2;
+        margin: 0 auto;
+        margin-bottom: 16px;
+        width: 100%;
+        max-width: 517px
+    }
+    &__subtitle {
+        @include  fontsRoboto400;
+        font-size: 16px;
+        line-height: 25.6px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: $blackColor3;
+        width: 100%;
+        max-width: 548px;
+         margin: 0 auto;
+    }
+    &__main {
+        background-image: url('../img/dp/intro-bg-dp.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 620px;
+        padding-top: 218px;
+        &-title {
+            @include fontsSpace400;
+            font-size: 16px;
+            line-height: 24px;  
+            color: $whiteColor;
+            margin-bottom: 25px;
+        }
+        &-descr {
+            @include fontsSpace400;
+            font-size: 16px;
+            line-height: 24px;
+            color: $whiteColor;
+            margin-bottom: 31px;
+        }
+    }
+    &__btn {
+        & > img {
+            transition: all .4s ease
+        }
+        &:hover {
+            & > img {
+                transform: rotate(15deg);
+            }
+        }
+    }
+}
