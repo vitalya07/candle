@@ -1154,6 +1154,269 @@ a {
   margin-bottom: 32px;
   color: #666666;
 }
+.cart__products {
+  padding: 120px;
+}
+.cart__products-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 48px;
+}
+.cart__products-img {
+  width: 128px;
+  height: 128px;
+}
+.cart__products-img > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.cart__products-item {
+  max-width: 805px;
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 24px;
+  padding: 24px;
+}
+.cart__products-title {
+  font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A1A1A;
+  margin-bottom: 8px;
+}
+.cart__products-category {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666666;
+  margin-bottom: 8px;
+}
+.cart__products-price {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A1A1A;
+  margin-bottom: 15px;
+}
+.cart__products-count {
+  width: 107px;
+  border: 1px solid #CCCCCC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 50px;
+  padding: 8px;
+}
+.cart__products-count--btn {
+  font-size: 20px;
+  cursor: pointer;
+}
+.cart__products-count--quantity {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A1A1A;
+}
+.cart__products-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 603px;
+}
+.cart__products-remove {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.cart__products-remove::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  width: 15px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: #8B1F1F;
+}
+.cart__products-remove::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  width: 15px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: #8B1F1F;
+}
+.cart__products-result {
+  width: 100%;
+  max-width: 378px;
+  min-height: 370px;
+  background-color: #E8DCC4;
+  padding: 24px;
+  border-radius: 8px;
+}
+.cart__products-result--title {
+  font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A1A1A;
+  margin-bottom: 24px;
+}
+.cart__products-result--head, .cart__products-result--delivery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 12px;
+}
+.cart__products-result--product {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+}
+.cart__products-result--price {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #1A1A1A;
+}
+.cart__products-result--final {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid #CCCCCC;
+  margin-bottom: 24px;
+}
+.cart__products-result--end {
+  font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A1A1A;
+}
+.cart__products-result--summa {
+  font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A1A1A;
+}
+.cart__products-primary {
+  width: 100%;
+  max-width: 330px;
+  height: 56px;
+  border-radius: 268px;
+  background-color: #8B1F1F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin-bottom: 12px;
+}
+.cart__products-primary:hover {
+  background-color: #4c0505;
+}
+.cart__products-secondery {
+  width: 330px;
+  height: 56px;
+  opacity: 1;
+  border-radius: 300px;
+  border: 2px solid #8B1F1F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 11px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #8B1F1F;
+}
+.cart__products-secondery:hover {
+  -webkit-box-shadow: 0px 0px 20px #000;
+          box-shadow: 0px 0px 20px #000;
+}
 
 .profile {
   padding: 120px 0;

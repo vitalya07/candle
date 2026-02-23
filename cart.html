@@ -51,22 +51,68 @@
         </header>
         <main class="content">           
             <div class="cart">
-                <div class="container">
-                    <div class="catalog__head">
-                        <a href="index.html" class="catalog__head-page catalog__head-page-1">Главная</a>
-                        <div class="catalog__head-arrow">
-                            <img src="assets/icons/chewron-left.svg" alt="Стрелка в лево" width="16" height="16">
+                <div class="cart__empty">
+                    <div class="container">
+                        <div class="catalog__head">
+                            <a href="index.html" class="catalog__head-page catalog__head-page-1">Главная</a>
+                            <div class="catalog__head-arrow">
+                                <img src="assets/icons/chewron-left.svg" alt="Стрелка в лево" width="16" height="16">
+                            </div>
+                            <a href="catalog.html" class="catalog__head-page catalog__head-page-2">Корзина</a>
                         </div>
-                        <a href="catalog.html" class="catalog__head-page catalog__head-page-2">Корзина</a>
-                    </div>
-                    <h1 class="cart__title">Корзина</h1>
-                    <h3 class="cart__subtitle">Свечи, которые хочется оставить</h3>
-                    <div class="cart__box">
-                        <h3 class="favorite__box-title">Ваша корзина пуста</h3>
-                        <a href="catalog.html" class="favorite__box-btn btn">Перейти в каталог</a>
-                    </div>
-                </div>
-            </div>         
+                        <h1 class="cart__title">Корзина</h1>
+                        <h3 class="cart__subtitle">Свечи, которые хочется оставить</h3>
+                        <div class="cart__box">
+                            <h3 class="favorite__box-title">Ваша корзина пуста</h3>
+                            <a href="catalog.html" class="favorite__box-btn btn">Перейти в каталог</a>
+                        </div>
+                    </div>                    
+                </div>    
+                <div class="cart__field">
+                    <div class="cart__products">
+                        <div class="cart__products-wrapper">
+                            <div class="cart__products-box">
+                                
+                            </div>
+                            <!-- <div class="cart__products-item">
+                                <div class="cart__products-img">
+                                    <img src="assets/img/dp/cards/image-1.webp" alt="Купить свечу" width="128" height="128" loading="lazy">
+                                </div>
+                                <div class="cart__products-info">
+                                    <h2 class="cart__products-title">OHMY Destinyy</h2>
+                                    <h2 class="cart__products-category">бергамот, кедр, амбра</h2>
+                                    <div class="cart__products-price">3 490 ₽</div>
+                                    <div class="cart__products-bottom">
+                                        <div class="cart__products-count">
+                                            <button class="cart__products-count--btn minus">-</button>
+                                            <div class="cart__products-count--quantity">0</div>
+                                            <button class="cart__products-count--btn plus">+</button>
+                                        </div>
+                                        <button class="cart__products-remove"></button>
+                                    </div>                        
+                                </div>                    
+                            </div> -->
+                            <div class="cart__products-result">
+                                <h2 class="cart__products-result--title">Итого</h2>
+                                <div class="cart__products-result--head">
+                                    <div class="cart__products-result--product">Товары (1)</div>                            
+                                    <div class="cart__products-result--price">3 490 ₽</div>  
+                                </div>
+                                <div class="cart__products-result--delivery">
+                                    <div class="cart__products-result--product">Доставка</div>                            
+                                    <div class="cart__products-result--price">Бесплатно</div>  
+                                </div>
+                                <div class="cart__products-result--final">
+                                    <div class="cart__products-result--end">Итого:</div>
+                                    <div class="cart__products-result--summa">3 490 ₽</div>
+                                </div>
+                                <a href="#" class="cart__products-primary">Оформить заказ</a>
+                                <a href="#" class="cart__products-secondery">Продолжить покупки</a>
+                            </div>
+                        </div>                
+                    </div> 
+                </div>            
+            </div>                   
         </main>
         <footer class="footer">
             <div class="container">
@@ -150,5 +196,6 @@
         </footer>
     </div>
     <script src="assets/js/menu.js"></script>
+    <script src="assets/js/cart.js"></script>
 </body>
 </html>
