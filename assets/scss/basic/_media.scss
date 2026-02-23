@@ -23,6 +23,85 @@
             flex-direction: column;
         }
     }
+    .catalog {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__filter {
+            display: none;
+            &-mobile {
+                width: 100%;
+                height: 50px;
+                display: block;
+                border-radius: 10px;                
+                &--title {
+                    @include fontsRoboto400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $blackColor2
+                }
+                &--head {
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    background-color: $beigeColor;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 8px;
+                    position: relative;
+                    padding: 11px 15px;
+                    margin-bottom: 30px;
+                }
+                &--img {
+                    position: absolute;
+                    top: 50%;
+                    right: 14px;
+                    transform: translateY(-50%);
+                }
+                &--box {
+                    height: 0;
+                    opacity: 0;
+                }
+            }
+            &-item {
+                font-size: 12px;
+            }
+        }
+    }
+    .cards {
+        &__wrapper {
+            flex-direction: row;
+        }
+        &__item {
+            max-width: 169px;
+            &-img {
+                width: 169px;
+                height: 225px;
+                & > picture {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    & > img {
+                        width: 100%;
+                        height: 100%;                        
+                    }
+                }
+            }
+            &-bottom {
+                &--btn {
+                    max-width: 48px;
+                    height: 31px;
+                    & > span {
+                     display: none;
+                    }
+                }
+                
+            }
+        }
+    }
+    .catalog {
+        padding: 52px 0;
+    }
     .footer {
         &__wrapper {
             flex-direction: column;

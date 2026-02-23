@@ -75,3 +75,26 @@
         }
     }
 }
+
+.filter-active {
+    background-color: $redColor;
+    color: $whiteColor;    
+}
+.filter-open {
+    .catalog__filter-list {
+        height: auto;
+        opacity: 1;
+    }
+    .catalog__filter-img {
+        transform: rotate(90deg);
+    }
+}
+.mobile-filter-open {
+    .catalog__filter-mobile--box {
+        height: 600px;
+        opacity: 1;
+        background-color: $whiteColor;
+        z-index: 2;
+        position: relative;
+    }
+}

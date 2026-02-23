@@ -1,0 +1,88 @@
+.catalog {
+    padding: 120px 0;
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 8px;
+        margin-bottom: 32px;
+        &-page {
+            @include fontsRoboto500;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 0.28px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $grayColor;
+            &-2 {
+                color: $redColor;;
+                font-size: 14px;
+                line-height: 20px;
+               text-transform: capitalize;
+            }
+        }
+    }
+    &__title {
+        @include fontsSpace700;
+        font-size: 64px;
+        line-height: 70.4px;
+        letter-spacing: -1.28px;
+        color: $blackColor;
+        margin-bottom: 7px;
+    }
+    &__count {
+        @include fontsRoboto400;
+        font-size: 16px;
+        line-height: 25.6px;    
+        color: $grayColor;
+    }
+    &__filter {
+        width: 256px;
+        &-mobile {
+            display: none;
+        }
+        &-element {
+            max-width: 256px;
+            position: relative;
+            margin-bottom: 32px;
+            cursor: pointer;
+        }
+        &-img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: all .4s ease;
+        }
+        &-title {
+            margin-bottom: 15px;
+            @include fontsRoboto400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;  
+            color: $blackColor;
+        }
+        &-item {
+            @include fontsRoboto400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0px;
+            color: $blackColor;
+            margin-bottom: 8px;
+            height: 40px;
+            padding: 7px 12px;
+            border-radius: 4px;
+        }
+        &-list {
+            height: 0;
+            opacity: 0;
+            transition: all .4s ease;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        gap: 50px;
+    }
+}
