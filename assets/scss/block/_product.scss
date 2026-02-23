@@ -1,4 +1,156 @@
 .product {
     padding: 120px 0;
-    
+    &__wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 48px;
+    }
+    &__img {
+        width: 50%;
+        max-width: 592px;
+        height: auto;
+        & > img {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+    }
+    &__information {
+        max-width: 592px;
+        width: 60%;
+        &-category {
+            @include fontsRoboto400;
+            font-size: 14px;
+            line-height: 20px;
+            color: $redColor;
+            margin-bottom: 16px;
+        }
+        &-title {
+            @include fontsSpace400;
+            font-size: 16px;
+            line-height: 24px;
+            color: $blackColor2;
+            margin-bottom: 16px;
+        }
+        &-price {
+            display: block;
+            @include fontsSpace400;
+            font-size: 30px;
+            line-height: 36px;
+            color: $redColor;
+            margin-bottom: 24px;
+        }
+        &-smell {
+            margin-bottom: 30px;
+            &--title {
+                @include fontsRoboto400;
+                font-size: 14px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: $grayColor;
+                margin-bottom: 8px;
+            }
+            &--list {
+                @include fontsRoboto400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $blackColor2;
+            }
+        }
+        &-color {
+            margin-bottom: 32px;
+            &--title {
+                @include fontsRoboto400;
+                font-size: 14px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: $grayColor;
+                margin-bottom: 8px;
+            }
+            &--name {
+                @include fontsRoboto400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $blackColor2;
+            }
+        }
+        &-count {
+            margin-bottom: 32px;
+            &--title {
+                @include fontsRoboto400;
+                font-size: 14px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: $grayColor;
+                margin-bottom: 8px;
+            }
+            &--box {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 16px;
+            }
+            &--quantity {
+                width: 48px;
+                height: 24px;
+                @include fontsRoboto400;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                color: $blackColor2;
+            }
+            &--minus, &--plus {
+                width: 40px;
+                height: 40px;
+                border: 1px solid $beigeColor;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                @include fontsRoboto400;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                color: $blackColor2;
+            }
+        }
+        &-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-btn {
+            width: 100%;
+            max-width: 508px;
+            height: 56px;
+            border-radius: 268px;
+            background-color: $redColor;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            @include fontsRoboto400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: $whiteColor;
+            cursor: pointer;
+            transition: all .4s ease;
+            &:hover {
+                background-color: $redColor2;
+            }
+        }
+        &-favorite {
+            width: 70px;
+            height: 55px;
+            border: 1px solid $beigeColor;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
 }

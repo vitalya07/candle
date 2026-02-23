@@ -1,0 +1,288 @@
+.profile {
+    padding: 120px 0;
+    &__title {
+        @include fontsSpace400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $blackColor2;
+        margin-bottom: 48px;
+    }
+    &__header {
+        background-color: $beigeColor;
+        max-width: 672px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        min-height: 136px;
+        padding: 24px 24px 0 24px;
+        border-radius: 8px;       
+    }
+    &__user {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 16px;
+        &-img {
+            width: 64px;
+            height: 64px;
+            border-radius: 100%;
+            & > img {
+                width: 100%;
+                height: 100%;
+                border-radius: 100%;
+            }
+        }
+        &-data {
+            &--name {
+                @include fontsSpace400;
+                font-size: 16px;
+                line-height: 24px;  
+                color: $blackColor2;
+            }
+            &--mail {
+                @include fontsRoboto400;
+                font-size: 14px;
+                line-height: 20px;
+                color: $grayColor;
+            }
+        }
+    }
+    &__address {
+        padding: 25px;
+        border: 1px solid $grayColor5;
+        width: 100%;
+        max-width: 672px;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        border-radius: 8px;
+        &-head {
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            gap: 12px;
+            &--img {
+                width: 20px;
+                height: 20px;
+                & > img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &--title {
+                @include fontsSpace400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0px;
+                color: $blackColor2;
+                margin-bottom: 16px;
+            }
+        }
+        &-ready {
+            background-color: $beigeColor;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            &--city {
+                @include fontsSpace400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $blackColor2;
+            }
+            &--street {
+                @include fontsRoboto400;
+                font-size: 14px;
+                line-height: 20px;
+                color: $grayColor;
+            }
+        }
+        &-add {
+            border: 1px solid $grayColor5;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            height: 50px;
+            width: 100%;
+            cursor: pointer;
+            &--city {
+                @include fontsRoboto400;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                color: $grayColor;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: -20px;
+                    top: 52%;
+                    transform: translateY(-50%);
+                    width: 12px;
+                    height: 2px;
+                    background-color: $grayColor;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -20px;
+                    top: 50%;
+                    transform: translateY(-50%) rotate(90deg);
+                    width: 12px;
+                    height: 2px;
+                    background-color: $grayColor;
+                }
+            }
+        }
+    }
+    &__favorite {
+        max-width: 672px;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        padding: 24px;
+        border: 1px solid $grayColor5;
+        border-radius: 8px;
+        position: relative;
+        cursor: pointer;
+        &-title {
+            @include fontsSpace400;
+            font-size: 16px;
+            line-height: 24px;  
+            color: $blackColor2;
+        }
+        &-img {
+            position: absolute;
+            top: 50%;
+            right: 26px;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px        
+        }
+    }
+    &__history {
+        padding: 24px;
+        border: 1px solid $grayColor5;
+        max-width: 672px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        border-radius: 8px;
+        position: relative;
+        &-head {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 12px;
+            margin-bottom: 16px;
+            &--cube {
+                width: 20px;
+                height: 20px;
+                & > img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &--title {
+                @include fontsSpace400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0px;
+                color: $blackColor2;
+            }
+            &--img {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                width: 20px;
+                height: 20px;
+            }
+        }
+        &-order {
+            padding: 16px;
+            background-color: $beigeColor;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &--head {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            &--number {
+                @include fontsRoboto400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $blackColor2;
+            }
+            &--status {
+                @include fontsRoboto400;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0px;
+                color: $blackColor2;
+                background-color: $whiteColor;
+                padding: 4px 12px;
+                border-radius: 50px;
+            }
+            &--data, &--name {
+                @include fontsRoboto400;
+                font-size: 14px;
+                line-height: 20px;
+                color: $grayColor;
+            }
+            &--name {
+                margin-bottom: 12px;
+            }
+            &--footer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            &--price {
+                @include fontsRoboto400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $blackColor2;
+            }
+            &--btn {
+                width: 100%;
+                max-width: 182px;
+                height: 36px;
+                border-radius: 8px;
+                background-color: $redColor;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                @include fontsRoboto400;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: center;
+                color: $whiteColor;
+                cursor: pointer;
+                transition: all .4s ease;
+                &:hover {
+                    background-color: $redColor2;
+                }
+            }
+        }
+    }
+    &__exit {
+        display: block;
+        @include fontsRoboto400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: $redColor;
+        width: 100px;
+        margin: 0 auto;
+        transition: all .4s ease;
+        &:hover {
+            color: $redColor2;
+        }
+    }
+}

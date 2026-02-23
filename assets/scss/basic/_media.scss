@@ -102,6 +102,28 @@
     .catalog {
         padding: 52px 0;
     }
+    .product {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__img {
+            width: 100%;
+        }
+        &__information {
+            width: 100%;
+            &-btn {
+                max-width: 268px;
+            }
+        }
+    }
+    .collection {
+        &__cards {
+            flex-wrap: wrap;
+        }
+        &__item {
+            min-height: 300px;
+        }
+    }
     .footer {
         &__wrapper {
             flex-direction: column;

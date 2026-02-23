@@ -1,0 +1,26 @@
+.error {
+    padding: 120px 0;
+    background-color: $beigeColor;
+    height: 100vh;
+    &__title {
+        @include fontsSpace400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: $blackColor2;
+        margin-bottom: 32px;
+    }
+    &__subtitle {
+        @include fontsRoboto400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: $grayColor;
+        margin-bottom: 31px;
+    }
+    &__btn {
+        display: block;
+        margin: 0 auto
+    }
+}

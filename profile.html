@@ -21,7 +21,7 @@
                             <li class="header__nav-list--item"><a href="catalog.html" class="header__nav-list--link">Каталог</a></li>
                             <li class="header__nav-list--item"><a href="favorite.html" class="header__nav-list--link">Избранное</a></li>
                             <li class="header__nav-list--item"><a href="cart.html" class="header__nav-list--link">Корзина</a></li>
-                            <li class="header__nav-list--item"><a href="profile.html" class="header__nav-list--link">Профиль</a></li>
+                            <li class="header__nav-list--item"><a href="#" class="header__nav-list--link">Профиль</a></li>
                         </ul>
                     </nav>
                     <div class="hamburger">
@@ -37,7 +37,7 @@
                     <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="favorite.html">Избранное</a></li>
                     <li><a href="cart.html">Корзина</a></li>
-                    <li><a href="profile.html">Профиль</a></li>
+                    <li><a href="#">Профиль</a></li>
                 </ul>
                 <div class="header__mobile-menu--bottom">
                     <a href="#" class="header__mobile-menu--social">
@@ -49,133 +49,100 @@
                 </div>
             </nav>
         </header>
-        <main class="content">
-            <section class="hero">
+        <main class="content">           
+            <div class="profile">
                 <div class="container">
-                    <h1 class="hero__title">НОВЫЙ СВЕТ. НОВОЕ НАСТРОЕНИЕ.</h1>
-                    <h3 class="hero__subtitle">Свечи, которые меняют пространство — мягко, чувственно, уверенно.</h3>
-                    <button class="hero__btn btn">
-                        <span>Смотреть коллекцию</span>
-                        <img src="assets/icons/arrow.svg" alt="Стрелка влево" width="20" height="20">
-                    </button>
-                </div>
-            </section>
-            <section class="intro">
-                <div class="intro__head">
-                    <h2 class="intro__title">Зажигай атмосферу.</h2>
-                    <h3 class="intro__subtitle">OHMY candle — это дизайнерские свечи с необычной формой и выразительным дизайном.</h3>
-                </div>
-                <div class="intro__main">
-                    <div class="container">
-                        <h3 class="intro__main-title">ДОМ НАЧИНАЕТСЯ С ОГНЯ</h3>
-                        <p class="intro__main-descr">Воск, аромат и форма, которые хочется трогать взглядом.</p>
-                        <button class="intro__btn white__btn">
-                            <span>Выбрать свечу</span>
-                            <img src="assets/icons/arrow-black.svg" alt="стрелка влево" width="20" height="20" loading="lazy">
+                    <div class="catalog__head">
+                        <a href="index.html" class="catalog__head-page catalog__head-page-1">Главная</a>
+                        <div class="catalog__head-arrow">
+                            <img src="assets/icons/chewron-left.svg" alt="Стрелка в лево" width="16" height="16">
+                        </div>
+                        <a href="catalog.html" class="catalog__head-page catalog__head-page-2">Профиль</a>
+                    </div>
+                    <h1 class="profile__title">Профиль</h1>
+                    <!-- Основные данные профиля -->
+                    <div class="profile__header">
+                        <div class="profile__user">
+                            <div class="profile__user-img">
+                                <img src="assets/icons/profile.svg" alt="Фото профиля" width="64" height="64" loading="lazy">
+                            </div>
+                            <div class="profile__user-data">
+                                <div class="profile__user-data--name">Анна Иванова</div>
+                                <div class="profile__user-data--mail">anna@example.com</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Адреса -->
+                    <div class="profile__address">
+                        <div class="profile__address-head">
+                            <div class="profile__address-head--img">
+                                <img src="assets/icons/location.svg" alt="Локация" width="20" height="20" loading="lazy">
+                            </div>
+                            <h3 class="profile__address-head--title">Сохранённые адреса</h3>
+                        </div>
+                        <div class="profile__address-ready">
+                            <h3 class="profile__address-ready--city">Москва</h3>
+                            <p class="profile__address-ready--street">ул. Пушкина, д. 10, кв. 5</p>
+                        </div>
+                        <button class="profile__address-add">
+                            <h3 class="profile__address-add--city">Добавить адрес</h3>
                         </button>
-                    </div>                   
-                </div>
-            </section>
-            <section class="hits">
-                <div class="container">
-                    <h2 class="hits__title">Хиты продаж</h2>
-                    <h3 class="hits__subtitle">То, к чему возвращаются снова</h3>
-                    <div class="hits__wrapper">
-                        <!-- 1 -->
-                        <div class="hits__item">
-                            <div class="hits__item-heart">
-                                <img src="assets/icons/heart.svg" alt="Добавить товар в избранное" width="17" height="15" loading="lazy">
+                    </div>
+                   <!-- избранное -->
+                    <div class="profile__favorite">
+                        <h3 class="profile__favorite-title">Избранное</h3>
+                        <div class="profile__favorite-img">
+                            <img src="assets/icons/chewron-left.svg" alt="Стрелка влево" width="20" height="20" loading="lazy">
+                        </div>
+                    </div>
+                    <!-- История заказов -->
+                    <div class="profile__history">
+                        <div class="profile__history-head">
+                            <div class="profile__history-head--cube">
+                                <img src="assets/icons/cube.svg" alt="Куб" width="20" height="20" loading="lazy">
                             </div>
-                            <div class="hits__item-img">
-                                <img src="assets/img/dp/Image-candle.webp" alt="Купить свечу" width="288" height="384" loading="lazy">
+                            <h3 class="profile__history-head--title">История заказов</h3>    
+                            <div class="profile__history-head--img">
+                                <img src="assets/icons/chewron-left.svg" alt="Стрелка влево" width="20" height="20" loading="lazy">
+                            </div>                        
+                        </div>
+                        <!-- 1 заказ -->
+                        <div class="profile__history-order">
+                            <div class="profile__history-order--head">
+                                <h4 class="profile__history-order--number">Заказ №12345</h4>
+                                <div class="profile__history-order--status">Доставлен</div>
                             </div>
-                            <h3 class="hits__item-title">OHMY Baddie</h3>
-                            <p class="hits__item-descr">кожа, табак, чёрная смородина</p>
-                            <div class="hits__item-bottom">
-                                <span class="hits__item-bottom--price">3 490 ₽</span>
-                                <button class="hits__item-bottom--btn">
-                                    <img src="assets/icons/cart.svg" alt="Добавить товар в корзину" width="16" height="16" loading="lazy">
-                                    <span>В корзину</span>
+                            <div class="profile__history-order--data">15 декабря 2025</div>
+                            <div class="profile__history-order--name">OHMY Love, OHMY Vamp</div>
+                            <div class="profile__history-order--footer">
+                                <h4 class="profile__history-order--price">6 980 ₽</h4>
+                                <button class="profile__history-order--btn">
+                                    <img src="assets/icons/repeat.svg" alt="Повторить заказ" width="16" height="16" loading="lazy">
+                                    <span>Повторить заказ</span>
                                 </button>
                             </div>
                         </div>
-                        <!-- 2 -->
-                        <div class="hits__item">
-                            <div class="hits__item-heart">
-                                <img src="assets/icons/heart.svg" alt="Добавить товар в избранное" width="17" height="15" loading="lazy">
+                        <!-- 2 заказ -->
+                        <div class="profile__history-order">
+                            <div class="profile__history-order--head">
+                                <h4 class="profile__history-order--number">Заказ №12344</h4>
+                                <div class="profile__history-order--status">Доставлен</div>
                             </div>
-                            <div class="hits__item-img">
-                                <img src="assets/img/dp/Image-candle-2.webp" alt="Купить свечу" width="288" height="384" loading="lazy">
-                            </div>
-                            <h3 class="hits__item-title">OHMY Baddie</h3>
-                            <p class="hits__item-descr">роза, пачули, ладана</p>
-                            <div class="hits__item-bottom">
-                                <span class="hits__item-bottom--price">3 490 ₽</span>
-                                <button class="hits__item-bottom--btn">
-                                    <img src="assets/icons/cart.svg" alt="Добавить товар в корзину" width="16" height="16" loading="lazy">
-                                    <span>В корзину</span>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- 3 -->
-                        <div class="hits__item">
-                            <div class="hits__item-heart">
-                                <img src="assets/icons/heart.svg" alt="Добавить товар в избранное" width="17" height="15" loading="lazy">
-                            </div>
-                            <div class="hits__item-img">
-                                <img src="assets/img/dp/Image-candle-3.webp" alt="Купить свечу" width="288" height="384" loading="lazy">
-                            </div>
-                            <h3 class="hits__item-title">OHMY Baddie</h3>
-                            <p class="hits__item-descr">роза, пачули, ладана</p>
-                            <div class="hits__item-bottom">
-                                <span class="hits__item-bottom--price">3 490 ₽</span>
-                                <button class="hits__item-bottom--btn">
-                                    <img src="assets/icons/cart.svg" alt="Добавить товар в корзину" width="16" height="16" loading="lazy">
-                                    <span>В корзину</span>
+                            <div class="profile__history-order--data">15 декабря 2025</div>
+                            <div class="profile__history-order--name">OHMY Love, OHMY Vamp</div>
+                            <div class="profile__history-order--footer">
+                                <h4 class="profile__history-order--price">3 490 ₽</h4>
+                                <button class="profile__history-order--btn">
+                                    <img src="assets/icons/repeat.svg" alt="Повторить заказ" width="16" height="16" loading="lazy">
+                                    <span>Повторить заказ</span>
                                 </button>
                             </div>
                         </div>
                     </div>
+                    <!-- выход -->
+                    <a href="index.html" class="profile__exit">Выйти</a>
                 </div>
-            </section>
-            <section class="feedback">
-                <div class="container">
-                    <h2 class="feedback__title">Говорят, что это любовь</h2>
-                    <div class="feedback__wrapper">
-                        <!-- 1 -->
-                        <div class="feedback__item">
-                            <p class="feedback__item-text">«Свеча горит, а ощущение — будто включили настроение. Хочется тишины и вина.»</p>
-                            <h4 class="feedback__item-name">— Анна К.</h4>
-                        </div>
-                        <!-- 2 -->
-                        <div class="feedback__item">
-                            <p class="feedback__item-text">«Это не просто свеча. Это новый уровень уюта в доме.»</p>
-                            <h4 class="feedback__item-name">— Дмитрий М.</h4>
-                        </div>
-                        <!-- 3 -->
-                        <div class="feedback__item">
-                            <p class="feedback__item-text">«Купила Vamp — и теперь это мой вечерний ритуал. Не могу без неё.»</p>
-                            <h4 class="feedback__item-name">— Елена С.</h4>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="history">
-                <div class="container">
-                    <h2 class="history__title">История OHMY candle</h2>
-
-                    <div class="history__box">
-                        <p class="history__paragraph">OHMY candle начался с желания сделать дом живым. Не идеальным. Настоящим.</p>
-                        <p class="history__paragraph">Сначала был огонь. Потом форма. Потом аромат, который остаётся в воздухе дольше слов.</p>
-                        <p class="history__paragraph">Сначала был огонь. Потом форма. Потом аромат, который остаётся в воздухе дольше слов.</p>
-                    </div>                   
-
-                    <a href="#" class="history__catalog">
-                        <span>Перейти в каталог</span>
-                        <img src="assets/icons/arrow-red.svg" alt="Посмотреть весь каталог" width="20" height="20" loading="lazy">
-                    </a>
-                </div>
-            </section>            
+            </div>         
         </main>
         <footer class="footer">
             <div class="container">
@@ -258,7 +225,6 @@
             </div>
         </footer>
     </div>
-    <script src="assets/js/header.js"></script>
     <script src="assets/js/menu.js"></script>
 </body>
 </html>

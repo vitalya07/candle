@@ -1,0 +1,35 @@
+.cart {
+    padding: 120px 0;
+    &__title {
+        font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 70.4px;
+        letter-spacing: -1.28px;
+        color: #000;
+        margin-bottom: 7px;
+    }
+    &__subtitle {
+        font-family: "Roboto Mono", monospace;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25.6px;
+        color: $grayColor;
+    }   
+    &__box {
+        padding: 144px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &-title {
+            @include fontsRoboto400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0px;
+            text-align: center;
+            margin-bottom: 32px;
+            color: $grayColor;
+        }
+    }
+}

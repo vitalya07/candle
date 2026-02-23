@@ -19,8 +19,8 @@
                         <ul class="header__nav-list">
                             <li class="header__nav-list--item"><a href="index.html" class="header__nav-list--link">Главная</a></li>
                             <li class="header__nav-list--item"><a href="catalog.html" class="header__nav-list--link">Каталог</a></li>
-                            <li class="header__nav-list--item"><a href="#" class="header__nav-list--link">Избранное</a></li>
-                            <li class="header__nav-list--item"><a href="#" class="header__nav-list--link">Корзина</a></li>
+                            <li class="header__nav-list--item"><a href="favorite.html" class="header__nav-list--link">Избранное</a></li>
+                            <li class="header__nav-list--item"><a href="cart.html" class="header__nav-list--link">Корзина</a></li>
                             <li class="header__nav-list--item"><a href="#" class="header__nav-list--link">Профиль</a></li>
                         </ul>
                     </nav>
@@ -35,8 +35,8 @@
                 <ul>
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="catalog.html">Каталог</a></li>
-                    <li><a href="#">Избранное</a></li>
-                    <li><a href="#">Корзина</a></li>
+                    <li><a href="favorite.html">Избранное</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
                     <li><a href="#">Профиль</a></li>
                 </ul>
                 <div class="header__mobile-menu--bottom">
@@ -49,109 +49,24 @@
                 </div>
             </nav>
         </header>
-        <main class="content">
-            <section class="product">
+        <main class="content">           
+            <div class="cart">
                 <div class="container">
                     <div class="catalog__head">
                         <a href="index.html" class="catalog__head-page catalog__head-page-1">Главная</a>
                         <div class="catalog__head-arrow">
                             <img src="assets/icons/chewron-left.svg" alt="Стрелка в лево" width="16" height="16">
                         </div>
-                        <a href="catalog.html" class="catalog__head-page catalog__head-page-1">Каталог</a>
-                        <div class="catalog__head-arrow">
-                            <img src="assets/icons/chewron-left.svg" alt="Стрелка в лево" width="16" height="16">
-                        </div>
-                        <a href="catalog.html" class="catalog__head-page catalog__head-page-2">OHMY Destinyг</a>
+                        <a href="catalog.html" class="catalog__head-page catalog__head-page-2">Корзина</a>
                     </div>
-                    <div class="product__wrapper">
-                        <div class="product__img">
-                            <img src="assets/img/dp/product-1.webp" alt="Купить свечи" width="592" height="592" loading="lazy">
-                        </div>
-                        <div class="product__information">
-                            <h2 class="product__information-category">DERZKO</h2>
-                            <h1 class="product__information-title">OHMY Vamp</h1>
-                            <span class="product__information-price">3 490 ₽</span>
-                            <div class="product__information-smell">
-                                <h4 class="product__information-smell--title">Аромат</h4>
-                                <div class="product__information-smell--list">тёмная вишня, кедр, тёплый мускус</div>
-                            </div>                            
-                            <div class="product__information-color">
-                               <h4 class="product__information-color--title">Цвет</h4>
-                               <h4 class="product__information-color--name">Красный</h4>
-                            </div>
-                            <div class="product__information-count">
-                                <h4 class="product__information-count--title">Количество</h4>
-                                <div class="product__information-count--box">
-                                    <button class="product__information-count--minus">-</button>
-                                        <div class="product__information-count--quantity">0</div>
-                                    <button class="product__information-count--plus">+</button>
-                                </div>                               
-                            </div>
-                            <div class="product__information-bottom">
-                                <button class="product__information-btn">
-                                    <img src="assets/icons/cart.svg" alt="Добавить товар в корзину" width="20" height="20" loading="lazy">
-                                    <span>Добавить в корзину</span>
-                                </button> 
-                                <div class="product__information-favorite">
-                                    <div class="product__information-favorite--img">
-                                        <img src="assets/icons/heart.svg" alt="Добавить товар в избранное" width="20" height="20" loading="lazy">
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
+                    <h1 class="cart__title">Корзина</h1>
+                    <h3 class="cart__subtitle">Свечи, которые хочется оставить</h3>
+                    <div class="cart__box">
+                        <h3 class="favorite__box-title">Ваша корзина пуста</h3>
+                        <a href="catalog.html" class="favorite__box-btn btn">Перейти в каталог</a>
                     </div>
                 </div>
-            </section> 
-            <section class="collection">
-                <div class="container">
-                    <h2 class="collection__title">Из этой же коллекции</h2>
-                    <div class="collection__cards">
-                        <!-- 1 -->
-                        <a href="product.html" target="_blank" class="collection__item cards__item">
-                            <div class="collection__item-img cards__item-img">
-                                <picture>
-                                    <source media="(max-width:450px)" srcset="assets/img/mobile/cards/image-2.webp" type="image/webp">
-                                    <img src="assets/img/dp/cards/image-2.webp" alt="Купить свечу" width="288" height="384" loading="lazy">
-                                </picture>
-                            </div>
-                            <h3 class="collection__item-title cards__item-title">OHMY Bad Mood</h3>
-                            <p class="collection__item-descr cards__item-descr">чёрная слива, имбирь, кожа</p>
-                            <div class="collection__item-bottom cards__item-bottom">
-                                <span class="collection__item-bottom--price cards__item-price">3 490 ₽</span>
-                            </div>
-                        </a>
-                        <!-- 2 -->
-                        <a href="product.html" target="_blank" class="collection__item cards__item">
-                            <div class="collection__item-img cards__item-img">
-                                <picture>
-                                    <source media="(max-width:450px)" srcset="assets/img/mobile/cards/image-7.webp" type="image/webp">
-                                    <img src="assets/img/dp/cards/image-7.webp" alt="Купить свечу" width="288" height="384" loading="lazy">
-                                </picture>
-                            </div>
-                            <h3 class="collection__item-title cards__item-title">OHMY Midnight</h3>
-                            <p class="collection__item-descr cards__item-descr">ветивер, чёрный перец, дым</p>
-                            <div class="collection__item-bottom cards__item-bottom">
-                                <span class="collection__item-bottom--price cards__item-price">3 490 ₽</span>
-                            </div>
-                        </a>
-                        <!-- 3 -->
-                        <a href="product.html" target="_blank" class="collection__item cards__item">
-                            <div class="collection__item-img cards__item-img">
-                                <picture>
-                                    <source media="(max-width:450px)" srcset="assets/img/mobile/cards/image-3.webp" type="image/webp">
-                                    <img src="assets/img/dp/cards/image-3.webp" alt="Купить свечу" width="288" height="384" loading="lazy">
-                                </picture>
-                            </div>
-                            <h3 class="collection__item-title cards__item-title">OHMY Baddie</h3>
-                            <p class="collection__item-descr cards__item-descr">кожа, табак, чёрная смородина</p>
-                            <div class="collection__item-bottom cards__item-bottom">
-                                <span class="collection__item-bottom--price cards__item-price">3 490 ₽</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </section>           
+            </div>         
         </main>
         <footer class="footer">
             <div class="container">
@@ -234,6 +149,6 @@
             </div>
         </footer>
     </div>
-    <script src="assets/js/menu.js"></script>>
+    <script src="assets/js/menu.js"></script>
 </body>
 </html>
