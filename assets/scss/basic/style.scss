@@ -3,8 +3,13 @@
 @import 'mixins';
 @import 'normalize';
 @import '../block/header';
+@import '../block/hamburger';
+@import '../block/mobile-menu';
 @import '../block/hero';
 @import '../block/intro';
 @import '../block/hits';
 @import '../block/feedback';
+@import '../block/history';
+@import '../block/footer';
 @import 'global';
+@import 'media';

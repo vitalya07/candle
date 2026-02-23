@@ -53,3 +53,25 @@
         box-shadow: 0px 0px 20px $blackColor;
     }
 }
+.menu-active {
+    .header__mobile-menu {
+        right: 0;
+    }
+    .hamburger {
+        & > span {
+            &:first-child {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:last-child {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+    }
+}

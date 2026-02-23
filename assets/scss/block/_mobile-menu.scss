@@ -1,0 +1,23 @@
+.header__mobile-menu {
+    transition: all .4s ease;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background-color: $whiteColor;
+    padding: 60px;
+    & > ul {
+        margin-bottom: 30px;
+        & > li {
+            & > a {
+                @include fontsRoboto400 ;        
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0px;
+                text-align: center;
+                color: $blackColor;
+            }
+        }        
+    }
+}

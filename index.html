@@ -24,9 +24,30 @@
                             <li class="header__nav-list--item"><a href="#" class="header__nav-list--link">Профиль</a></li>
                         </ul>
                     </nav>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
-           
+            <nav class="header__mobile-menu">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Избранное</a></li>
+                    <li><a href="#">Корзина</a></li>
+                    <li><a href="#">Профиль</a></li>
+                </ul>
+                <div class="header__mobile-menu--bottom">
+                    <a href="#" class="header__mobile-menu--social">
+                        <img src="assets/icons/mail-red.svg" alt="Связаться с нами по потче" width="20" height="20">
+                    </a>
+                    <a href="#" class="header__mobile-menu--social">
+                        <img src="assets/icons/phone.svg" alt="Связаться с нами по потче" width="20" height="20">
+                    </a>
+                </div>
+            </nav>
         </header>
         <main class="content">
             <section class="hero">
@@ -140,9 +161,9 @@
                 </div>
             </section>
             <section class="history">
-                <div class="conrainer">
+                <div class="container">
                     <h2 class="history__title">История OHMY candle</h2>
-                    
+
                     <div class="history__box">
                         <p class="history__paragraph">OHMY candle начался с желания сделать дом живым. Не идеальным. Настоящим.</p>
                         <p class="history__paragraph">Сначала был огонь. Потом форма. Потом аромат, который остаётся в воздухе дольше слов.</p>
@@ -155,7 +176,88 @@
                     </a>
                 </div>
             </section>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__wrapper">
+                        <!-- Свечи -->
+                        <div class="footer__candles footer__item">
+                            <h3 class="footer__candles-title footer__item-title">OHMY candle</h3>
+                            <p class="footer__candles-descr">Дизайнерские свечи, которые меняют пространство — мягко, чувственно, уверенно.</p>
+                            <div class="footer__candles-social">
+                                <a href="#" class="footer__candles-link">
+                                    <img src="assets/icons/insta.svg" alt="Связаться с нами в instagram" width="20" height="20" loading="lazy">
+                                </a>
+                                <a href="#" class="footer__candles-link">
+                                    <img src="assets/icons/mail.svg" alt="Связаться с нами по почте" width="20" height="20" loading="lazy">
+                                </a>
+                            </div>
+                        </div>  
+                        <!-- Навигация -->
+                        <nav class="footer__nav footer__item">
+                            <h3 class="footer__nav-title footer__item-title">Навигация</h3>
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-list--item"><a href="#" class="footer__nav-list--link">Главная</a></li>
+                                <li class="footer__nav-list--item"><a href="#" class="footer__nav-list--link">Каталог</a></li>
+                                <li class="footer__nav-list--item"><a href="#" class="footer__nav-list--link">Избранное</a></li>
+                                <li class="footer__nav-list--item"><a href="#" class="footer__nav-list--link">Корзина</a></li>
+                            </ul>
+                        </nav>    
+                        <!-- Колллекция            -->
+                        <div class="footer__collection footer__item">
+                            <h3 class="footer__collection-title footer__item-title">Коллекции</h3>
+                            <ul class="footer__collection-list">
+                                <li class="footer__collection-list--item"><a href="#" class="footer__collection-list--link">MAINSTREAM</a></li>
+                                <li class="footer__collection-list--item"><a href="#" class="footer__collection-list--link">DERZKO</a></li>
+                                <li class="footer__collection-list--item"><a href="#" class="footer__collection-list--link">COZY</a></li>
+                            </ul>
+                        </div>
+                        <!-- Контакты -->
+                        <div class="footer__contacts footer__item">
+                            <h3 class="footer__contacts-title footer__item-title">Контакты</h3>
+                            <div class="footer__contacts-el">
+                                <div class="footer__contacts-el--icon">
+                                    <img src="assets/icons/location.svg" alt="Локация" width="20" height="20" loading="lazy">
+                                </div>
+                                <div class="footer__contacts-el--title">г. Москва, ул. Пушкина, д. Колотушкина</div>
+                            </div>
+
+                            <div class="footer__contacts-el">
+                                <div class="footer__contacts-el--icon">
+                                    <img src="assets/icons/phone.svg" alt="телефон" width="20" height="20" loading="lazy">
+                                </div>
+                                <div class="footer__contacts-el--title">+8 (888) 888-88-88</div>
+                            </div>
+
+                            <div class="footer__contacts-el">
+                                <div class="footer__contacts-el--icon">
+                                    <img src="assets/icons/mail-red.svg" alt="Почта" width="20" height="20" loading="lazy">
+                                </div>
+                                <div class="footer__contacts-el--title">info@ohmycandle.com</div>
+                            </div>
+                        </div>
+                        <!-- Поддержка -->
+                        <div class="footer__support footer__item">
+                            <h3 class="footer__support-title footer__item-title">Поддержка</h3>
+                            <a href="#" class="footer__support-descr">Обратиться в службу поддержки</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__line"></div>
+                <div class="container">
+                    <div class="footer__box">
+                        <div class="footer__copy footer__box-el">
+                            © 2026 OHMY candle. Все права защищены.
+                        </div>
+                        <a href="#" class="footer__policy footer__box-el">Политика конфиденциальности</a>
+                        <a href="#" class="footer__conditions footer__box-el">Условия использования</a>
+                    </div>
+                </div>
+                <div class="footer__fire">
+                    <h2 class="footer__fire-title">Зажигай атмосферу с OHMY</h2>
+                </div>
+            </footer>
         </main>
     </div>
+    <script src="assets/js/menu.js"></script>
 </body>
 </html>
