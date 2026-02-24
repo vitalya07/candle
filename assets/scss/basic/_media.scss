@@ -1,3 +1,27 @@
+@media (max-width: 768px) {
+    .conditions__title {
+        font-size: 26px;
+    }
+
+    .conditions__block h2 {
+        font-size: 18px;
+    }
+
+    .conditions__block p {
+        font-size: 15px;
+    }
+     .policy__title {
+        font-size: 26px;
+    }
+
+    .policy__block h2 {
+        font-size: 18px;
+    }
+
+    .policy__block p {
+        font-size: 15px;
+    }
+}
 @media (max-width: 450px) {
     .header {
         &__nav {

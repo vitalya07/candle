@@ -116,3 +116,34 @@
         }
     }
 }
+.fail {
+    padding: 120px 0;
+    height: 100vh;
+    & > h1 {
+        font-size: 30px;
+    }
+}
+
+/* Скрываем ошибки по умолчанию */
+.popup__form-error {
+    display: none;
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Красная рамка для полей с ошибкой */
+.error-field {
+    border: 2px solid #e74c3c;
+    border-radius: 4px;
+    transition: border 0.3s ease;
+}
+
+/* Плавное появление ошибки */
+.popup__form-error.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+}

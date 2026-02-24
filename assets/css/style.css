@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap");
 html, body {
   margin: 0;
@@ -1975,6 +1976,66 @@ a {
   background-color: #4c0505;
 }
 
+.conditions {
+  padding: 120px 0;
+}
+
+.conditions__title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.conditions__date {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.conditions__block {
+  margin-bottom: 30px;
+}
+
+.conditions__block h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.conditions__block p {
+  font-size: 16px;
+  color: #444;
+}
+
+.policy {
+  padding: 120px 0;
+}
+
+.policy__title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.policy__date {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.policy__block {
+  margin-bottom: 30px;
+}
+
+.policy__block h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.policy__block p {
+  font-size: 16px;
+  color: #444;
+}
+
 .footer {
   background-color: #1A1A1A;
 }
@@ -2299,6 +2360,62 @@ a {
           transform: scale(1);
 }
 
+.fail {
+  padding: 120px 0;
+  height: 100vh;
+}
+.fail > h1 {
+  font-size: 30px;
+}
+
+/* Скрываем ошибки по умолчанию */
+.popup__form-error {
+  display: none;
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 4px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* Красная рамка для полей с ошибкой */
+.error-field {
+  border: 2px solid #e74c3c;
+  border-radius: 4px;
+  -webkit-transition: border 0.3s ease;
+  transition: border 0.3s ease;
+}
+
+/* Плавное появление ошибки */
+.popup__form-error.show {
+  display: block;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .conditions__title {
+    font-size: 26px;
+  }
+  .conditions__block h2 {
+    font-size: 18px;
+  }
+  .conditions__block p {
+    font-size: 15px;
+  }
+  .policy__title {
+    font-size: 26px;
+  }
+  .policy__block h2 {
+    font-size: 18px;
+  }
+  .policy__block p {
+    font-size: 15px;
+  }
+}
 @media (max-width: 450px) {
   .header__nav {
     display: none;
