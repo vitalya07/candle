@@ -213,9 +213,16 @@
             gap: 15px;
         }
        &__item {
-        &-descr {
-            font-size: 13px;
-        }
+        height: 380px;
+            &-descr {
+                font-size: 14px;
+            }
+            &-bottom {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            }
        }
     }
 }

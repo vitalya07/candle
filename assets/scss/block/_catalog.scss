@@ -40,6 +40,9 @@
         width: 256px;
         &-mobile {
             display: none;
+            &--box {
+                z-index: 20;
+            }
         }
         &-element {
             max-width: 256px;

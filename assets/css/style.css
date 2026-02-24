@@ -608,6 +608,9 @@ a {
 .catalog__filter-mobile {
   display: none;
 }
+.catalog__filter-mobile--box {
+  z-index: 20;
+}
 .catalog__filter-element {
   max-width: 256px;
   position: relative;
@@ -2342,8 +2345,9 @@ a {
   height: 600px;
   opacity: 1;
   background-color: #fff;
-  z-index: 2;
+  z-index: 40;
   position: relative;
+  height: 200vh;
 }
 
 .popup-hide .popup {
@@ -2637,7 +2641,16 @@ a {
             justify-content: center;
     gap: 15px;
   }
+  .cards__item {
+    height: 380px;
+  }
   .cards__item-descr {
-    font-size: 13px;
+    font-size: 14px;
+  }
+  .cards__item-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
