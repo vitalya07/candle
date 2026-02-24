@@ -95,6 +95,7 @@
     .cards {
         &__wrapper {
             flex-direction: row;
+            gap: 12px;
         }
         &__item {
             max-width: 169px;

@@ -31,6 +31,9 @@
     &:hover {
         background-color: $redColor2;
     }
+    &:active {
+        background-color: $beigeColor;
+    }
 }
 .white__btn {
     width: 220px;
