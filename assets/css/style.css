@@ -2626,4 +2626,18 @@ a {
             justify-content: start;
     gap: 15px;
   }
+}
+@media (max-width: 380px) {
+  .container {
+    padding: 0 10px;
+  }
+  .cards__wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 15px;
+  }
+  .cards__item-descr {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=style.css.map */

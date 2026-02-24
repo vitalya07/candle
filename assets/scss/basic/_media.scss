@@ -203,3 +203,19 @@
         }
     }
 }
+@media (max-width:380px) {
+    .container {
+        padding: 0 10px;
+    }
+    .cards {
+        &__wrapper {
+            justify-content: center;
+            gap: 15px;
+        }
+       &__item {
+        &-descr {
+            font-size: 13px;
+        }
+       }
+    }
+}
