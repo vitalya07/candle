@@ -1,4 +1,4 @@
-document.addEventListener('click', ()=> {
+document.addEventListener('DOMContentLoaded', ()=> {
     const popup = document.querySelector('.popup');
     const support = document.querySelector('.footer__support-descr');
 
