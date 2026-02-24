@@ -21,6 +21,13 @@
     .policy__block p {
         font-size: 15px;
     }
+    .cards {
+        &__item {
+            &-category {
+                display: none;
+            }
+        }
+    }
 }
 @media (max-width: 450px) {
     .header {
