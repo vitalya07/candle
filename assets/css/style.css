@@ -1199,6 +1199,7 @@ a {
           justify-content: start;
   gap: 24px;
   padding: 24px;
+  margin-bottom: 20px;
 }
 .cart__products-title {
   font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
