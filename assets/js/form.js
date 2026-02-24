@@ -46,5 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
             e.preventDefault();
         }
         // Если ошибок нет, форма отправляется на form.php (PHP сам редиректит)
-    });
+    });   
+    
 });

@@ -113,6 +113,13 @@
                 &:hover {
                     background-color: $redColor2;
                 }
+                &:active {
+                    background-color: $beigeColor;
+                }
+                &:disabled {
+                    background-color: $grayColor7;
+                    color: $grayColor5;
+                }
             }
         }
     }

@@ -105,6 +105,16 @@
             height: 50px;
             width: 100%;
             cursor: pointer;
+            transition: all .4s ease;
+            &:hover {
+                border: 1px solid $grayColor6
+            }
+            &:active {
+                border: 1px solid $blackColor2;
+            }
+            &:disabled {
+                background-color: $grayColor7;
+            }
             &--city {
                 @include fontsRoboto400;
                 font-size: 16px;
@@ -267,6 +277,13 @@
                 transition: all .4s ease;
                 &:hover {
                     background-color: $redColor2;
+                }
+                &:active {
+                    background-color: $beigeColor;
+                }
+                &:disabled {
+                    background-color: $grayColor7;
+                    color: $grayColor5;
                 }
             }
         }
