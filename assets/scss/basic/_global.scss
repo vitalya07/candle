@@ -98,3 +98,21 @@
         position: relative;
     }
 }
+.popup-hide {
+    .popup {
+        visibility: hidden;
+        opacity: 0;
+        &__dialog {
+            transform: scale(0);
+        }
+    }
+}
+.popup-show {
+    visibility: visible;
+    opacity: 1;
+    .popup {
+        &__dialog {
+            transform: scale(1);
+        }
+    }
+}

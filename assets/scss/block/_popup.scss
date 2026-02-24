@@ -1,0 +1,147 @@
+.popup {
+    width: 100%;
+    height: 100%;
+    background-color: #00000050;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease;
+    &__dialog {
+        width: 100%;
+        max-width: 425px;
+        background-color: $whiteColor;
+        border-radius: 8px;       
+        margin: 100px auto;
+        transform: scale(0);
+        transition: all .4s ease;
+    }
+    &__content {
+        position: relative;
+        padding: 24px;
+    }
+    &__title {
+        @include fontsSpace700;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: -0.18px;
+        color: $blackColor2;
+        margin-bottom: 16px;
+    }
+    &__close {
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        &::after {
+            content: '';;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 16px;
+            height: 2px;
+            background-color: $blackColor2;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+        &::before {
+            content: '';;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 16px;
+            height: 2px;
+            background-color: $blackColor2;
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+    &__form {
+        width: 100%;
+        &-container {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+        &-label {
+            display: block;
+            width: 100%;
+            @include fontsRoboto500;
+            font-size: 14px;;
+            line-height: 14px;
+            color: $blackColor2;
+            margin-bottom: 8px;
+        }
+        &-input, &-select, &-msg {
+            width: 100%;
+            display: block;
+            background-color: $beigeColor;
+            border: none;
+            padding: 9px 12px;
+            border-radius: 6px;
+        }
+        &-select {
+            &:focus {
+                outline: 1px solid #00000000;
+            }
+        }
+        &-msg {
+            height: 64px;
+        }
+        &-error {
+            @include fontsRoboto400;
+            display: none;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 120%;
+            color: $redColor;
+            padding-left: 5%;
+        }
+        &-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 12px;
+        }
+        &-btn {
+            &--secondery {
+                border: 1px solid $grayColor5;
+                width: 107px;
+                height: 41px;   
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 9px 24px;
+                @include fontsRoboto400;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                color: $blackColor2;
+                cursor: pointer;
+            }
+            &--primary {
+                width: 100%;
+                max-width: 134px;
+                height: 41px;
+                border-radius: 268px;
+                background-color: $redColor;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                @include fontsRoboto400;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                color: $whiteColor;
+                cursor: pointer;
+                transition: all .4s ease;
+                &:hover {
+                    background-color: $redColor2;
+                }
+            }
+        }
+    }
+}

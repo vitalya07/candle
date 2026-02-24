@@ -107,13 +107,13 @@
     &__support {
         &-descr {
             @include fontsRoboto400;
-            font-style: Regular;
             font-size: 16px;
             line-height: 26px;  
             color: $whiteColor;
             opacity: .7;
             margin-bottom: 15px;
             transition: all .4s ease;
+            z-index: 30;
             &:hover {
                 color: $redColor;
             }

@@ -21,7 +21,7 @@
                             <li class="header__nav-list--item"><a href="catalog.html" class="header__nav-list--link">Каталог</a></li>
                             <li class="header__nav-list--item"><a href="favorite.html" class="header__nav-list--link">Избранное</a></li>
                             <li class="header__nav-list--item"><a href="cart.html" class="header__nav-list--link">Корзина</a></li>
-                            <li class="header__nav-list--item"><a href="#" class="header__nav-list--link">Профиль</a></li>
+                            <li class="header__nav-list--item"><a href="profile.html" class="header__nav-list--link">Профиль</a></li>
                         </ul>
                     </nav>
                     <div class="hamburger">
@@ -37,7 +37,7 @@
                     <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="favorite.html">Избранное</a></li>
                     <li><a href="cart.html">Корзина</a></li>
-                    <li><a href="#">Профиль</a></li>
+                    <li><a href="profile.html">Профиль</a></li>
                 </ul>
                 <div class="header__mobile-menu--bottom">
                     <a href="#" class="header__mobile-menu--social">
@@ -122,10 +122,10 @@
                         <h3 class="footer__candles-title footer__item-title">OHMY candle</h3>
                         <p class="footer__candles-descr">Дизайнерские свечи, которые меняют пространство — мягко, чувственно, уверенно.</p>
                         <div class="footer__candles-social">
-                            <a href="#" class="footer__candles-link">
+                            <a href="instagram.com" target="_blank" class="footer__candles-link">
                                 <img src="assets/icons/insta.svg" alt="Связаться с нами в instagram" width="20" height="20" loading="lazy">
                             </a>
-                            <a href="#" class="footer__candles-link">
+                            <a href="mail.ru" target="_blank" class="footer__candles-link">
                                 <img src="assets/icons/mail.svg" alt="Связаться с нами по почте" width="20" height="20" loading="lazy">
                             </a>
                         </div>
@@ -134,19 +134,19 @@
                     <nav class="footer__nav footer__item">
                         <h3 class="footer__nav-title footer__item-title">Навигация</h3>
                         <ul class="footer__nav-list">
-                            <li class="footer__nav-list--item"><a href="#" class="footer__nav-list--link">Главная</a></li>
-                            <li class="footer__nav-list--item"><a href="#" class="footer__nav-list--link">Каталог</a></li>
-                            <li class="footer__nav-list--item"><a href="#" class="footer__nav-list--link">Избранное</a></li>
-                            <li class="footer__nav-list--item"><a href="#" class="footer__nav-list--link">Корзина</a></li>
+                            <li class="footer__nav-list--item"><a href="index.html" class="footer__nav-list--link">Главная</a></li>
+                            <li class="footer__nav-list--item"><a href="catalog.html" class="footer__nav-list--link">Каталог</a></li>
+                            <li class="footer__nav-list--item"><a href="favorite.html" class="footer__nav-list--link">Избранное</a></li>
+                            <li class="footer__nav-list--item"><a href="cart.html" class="footer__nav-list--link">Корзина</a></li>
                         </ul>
                     </nav>    
                     <!-- Колллекция            -->
                     <div class="footer__collection footer__item">
                         <h3 class="footer__collection-title footer__item-title">Коллекции</h3>
                         <ul class="footer__collection-list">
-                            <li class="footer__collection-list--item"><a href="#" class="footer__collection-list--link">MAINSTREAM</a></li>
-                            <li class="footer__collection-list--item"><a href="#" class="footer__collection-list--link">DERZKO</a></li>
-                            <li class="footer__collection-list--item"><a href="#" class="footer__collection-list--link">COZY</a></li>
+                            <li class="footer__collection-list--item"><a href="error.html" class="footer__collection-list--link">MAINSTREAM</a></li>
+                            <li class="footer__collection-list--item"><a href="error.html" class="footer__collection-list--link">DERZKO</a></li>
+                            <li class="footer__collection-list--item"><a href="error.html" class="footer__collection-list--link">COZY</a></li>
                         </ul>
                     </div>
                     <!-- Контакты -->
@@ -176,7 +176,7 @@
                     <!-- Поддержка -->
                     <div class="footer__support footer__item">
                         <h3 class="footer__support-title footer__item-title">Поддержка</h3>
-                        <a href="#" class="footer__support-descr">Обратиться в службу поддержки</a>
+                        <button class="footer__support-descr">Обратиться в службу поддержки</button>
                     </div>
                 </div>
             </div>
@@ -186,16 +186,51 @@
                     <div class="footer__copy footer__box-el">
                         © 2026 OHMY candle. Все права защищены.
                     </div>
-                    <a href="#" class="footer__policy footer__box-el">Политика конфиденциальности</a>
-                    <a href="#" class="footer__conditions footer__box-el">Условия использования</a>
+                    <a href="policy.html" target="_blank" class="footer__policy footer__box-el">Политика конфиденциальности</a>
+                    <a href="conditions.html" target="_blank" class="footer__conditions footer__box-el">Условия использования</a>
                 </div>
             </div>
             <div class="footer__fire">
                 <h2 class="footer__fire-title">Зажигай атмосферу с OHMY</h2>
             </div>
         </footer>
+        <div class="popup">
+            <div class="popup__dialog">
+                <div class="popup__content">
+                    <h3 class="popup__title">Обратиться в службу поддержки</h3>
+                    <div class="popup__close"></div>
+                    <form action="#" class="popup__form">
+                        <div class="popup__form-container">
+                            <label for="form-email" class="popup__form-label">Email</label>
+                            <input type="email" class="popup__form-input" id="form-email" autocapitalize="email" placeholder="example@example.com" required>
+                            <div class="popup__form-error">Ошибка заполнения</div>
+                        </div>
+                        <div class="popup__form-container">
+                            <label for="form-error" class="popup__form-label">С чем возникла проблема</label>
+                            <select name="error" id="form-error" class="popup__form-select">
+                                <option value="Выберите категорию" class="form-error-category">Выберите категорию</option>
+                                <option value="Оплата" class="form-error-option">Оплата</option>
+                                <option value="Доставка" class="form-error-option">Доставка</option>
+                                <option value="Доставка" class="form-error-option">Получение</option>
+                            </select>
+                            <div class="popup__form-error">Ошибка выбора</div>
+                        </div>
+                        <div class="popup__form-container">
+                            <label for="form-descr" class="popup__form-label">Опишите проблему</label>
+                            <textarea name="descr" id="form-descr" class="popup__form-msg" placeholder="Опишите вашу проблему"></textarea>
+                            <div class="popup__form-error">Ошибка заполнения</div>
+                        </div>
+                        <div class="popup__form-bottom">
+                            <button class="popup__form-btn--secondery">Отмена</button>
+                            <button class="popup__form-btn--primary">Отправить</button>
+                        </div>                        
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/cart.js"></script>
+    <script src="assets/js/popup.js"></script>
 </body>
 </html>

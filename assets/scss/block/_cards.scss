@@ -32,7 +32,10 @@
         max-width: 1030px;
     }
     &__item {
+        display: block;
         position: relative;
+        width: 284px;
+        height: 503px;
         &-heart {
             position: absolute;
             top: 16px;
